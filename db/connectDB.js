@@ -6,11 +6,11 @@ const connectDB = async () => {
     try {
 
         // mongodb local server
-        await mongoose.connect(process.env.MONGODB_LOCAL_SERVER)
+        // await mongoose.connect(process.env.MONGODB_LOCAL_SERVER)
         
 
         // mondb atlas cloud sever
-        // await mongoose.connect(process.env.MONGODB_CLOUD_SERVER)
+        await mongoose.connect(process.env.MONGODB_CLOUD_SERVER)
 
         console.log("✅ MongoDB Connected Successfully!");
         
