@@ -1,0 +1,2 @@
+Web App Clone Projects 🚀
+This repository contains two fully-functional web app clones, showcasing advanced web development skills. These projects feature robust backend integration, database connectivity, search and filtering capabilities, payment system implementation, and stunning animations to enhance the user experience.
