@@ -45,7 +45,7 @@ passport.use(new localStrategy(userModel.authenticate()));
 //*****************************************************************************************
 /* GET home page router */
 router.get('/', async function(req, res, next) {
-  let productList = await Products.find({});
+  let productList = await Products.find({}).limit(100).exec();
   res.render('index',{productList});
 });
 
@@ -119,7 +119,7 @@ router.post('/donate2', isLoggedIn, async function(req, res, next) {
 //****************************************************************************************************
 // shop product list router
 router.get('/shop', async function(req, res, next) {
-  let productList = await Products.find({});
+  let productList = await Products.find({}).limit(100).exec();
   // console.log(productList)
   res.render('shop',{productList});
 });

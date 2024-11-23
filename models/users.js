@@ -15,7 +15,35 @@ const plm = require("passport-local-mongoose");
 // mongoose.connect(process.env.MONGODB_LOCAL_SERVER);
 
 // mongodb cloud server
-mongoose.connect(process.env.MONGODB_CLOUD_SERVER);
+// mongoose.connect(process.env.MONGO_URI);
+
+const mongoUri = process.env.MONGO_URI || 'yourMongoDbUriHere';
+
+mongoose.connect(mongoUri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverSelectionTimeoutMS: 15000, // Timeout after 5 seconds if no server responds
+  socketTimeoutMS: 45000,        // Close sockets after 45 seconds of inactivity
+  retryWrites: true              // Enable retryable writes
+}).then(() => {
+  console.log('MongoDB connected');
+}).catch((err) => {
+  console.error('MongoDB connection error:', err);
+});
+
+
+mongoose.connection.on('connected', () => {
+  console.log('Mongoose connected to MongoDB');
+});
+
+mongoose.connection.on('error', (err) => {
+  console.error('Mongoose connection error:', err);
+});
+
+mongoose.connection.on('disconnected', () => {
+  console.log('Mongoose disconnected from MongoDB');
+});
+
 
 
 

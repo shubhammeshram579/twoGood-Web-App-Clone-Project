@@ -40,7 +40,7 @@ app.use(
     resave: false,
     saveUninitialized: false,
     store: MongoStore.create({
-      mongoUrl: process.env.MONGODB_CLOUD_SERVER || "mongodb://localhost:27017/yourDatabaseName",
+      mongoUrl: process.env.MONGO_URI || "mongodb://localhost:27017/yourDatabaseName",
       collectionName: "sessions", // Optional: Customize the collection name
     }),
     cookie: {
@@ -49,6 +49,8 @@ app.use(
     },
   })
 );
+
+
 
 
 // Middleware to make flash messages available in templates
