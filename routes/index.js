@@ -258,10 +258,10 @@ router.get('/add-to-cart',isLoggedIn, async (req, res) => {
   const userId = user._id; // Get the current logged-in user's ID
 
   try {
-    const products = await Products.find(); // Get all products
+  // const products = await Products.find({}); // Get all products
     const cart = await Cart.findOne({ userId }).populate('products.productId'); // Get the current user's cart
     // console.log("cardsss",cart)
-    res.render('addtocard', { products, cart });
+    res.render('addtocard', { cart });
   } catch (err) {
     console.error(err);
     res.status(500).send('Error retrieving products and cart');
@@ -278,10 +278,10 @@ router.get('/add-to-cart2',isLoggedIn, async (req, res) => {
   const userId = user._id; // Get the current logged-in user's ID
 
   try {
-    const products = await Products.find(); // Get all products
+    // const products = await Products.find({}); // Get all products
     const cart = await Cart.findOne({ userId }).populate('products.productId'); // Get the current user's cart
     // console.log("cardsss",cart)
-    res.render('checkout', { products, cart,user});
+    res.render('checkout', {cart,user});
   } catch (err) {
     console.error(err);
     res.status(500).send('Error retrieving products and cart');
@@ -350,7 +350,7 @@ router.get('/payment',isLoggedIn ,async (req, res) => {
    const userId = user._id; // Get the current logged-in user's ID
 
 
-   const products = await Products.find(); // Get all products
+  //  const products = await Products.find({}); // Get all products
     const cart = await Cart.findOne({ userId }).populate('products.productId'); // Get the current user's cart
 
     // console.log("pyament card" , cart)
