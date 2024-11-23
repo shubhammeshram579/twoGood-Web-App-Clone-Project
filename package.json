@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "My Node.js and Express.js application",
-  
+  "main": "app.js", 
   "engines": {
       "node": "20.x"
     },
