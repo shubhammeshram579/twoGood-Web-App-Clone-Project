@@ -1,0 +1,285 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 7px;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color:#827f7f;
+    border-radius: 50px;
+}
+
+
+
+
+
+.page1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.page1 img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.page2 h1{
+    text-align: center;
+    padding: 20px 20px;
+}
+
+
+.page2 .part1 .card1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rebeccapurple; */
+    width: 100%;
+
+}
+
+#first_name{
+    padding-right: 3vw;
+}
+
+#last_name{
+    padding-right: 0.5vw;
+    margin-right: 100px;
+}
+.page2 .part1 .card2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.page2 .part1 .card2 .mobile{
+    padding-right: 2.6vw;
+    /* background-color: rebeccapurple; */
+}
+
+
+
+#email{
+    padding-right: 0.5vw;
+    margin-right: 140px;
+}
+
+
+.page2 .part2 .card2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page2 .part2 .card2 select{
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+#address{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#Country{
+    padding-right: 200px;
+}
+
+#state{
+    padding-right: 230px;
+}
+
+.page2 .part3 .ratio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.page2 .part3 .ratio input{
+    height: 20px;
+
+}
+
+.page2 p{
+    text-transform: capitalize;
+    font-size: 2vh;
+}
+
+
+.page2 input{
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+};
+
+
+.page2 textarea{
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+};
+
+
+.page2 .part5 input{
+    background-color: #111;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+
+    html,body{
+     
+        overflow-x: hidden;
+    }
+
+
+    .page2 .part1{
+   
+        padding: 0px 20px;
+    }
+
+    .page2 .part1 .card1{
+  
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        
+
+    }
+    .page2 .part2{
+      
+        padding: 0px 20px;
+    }
+
+    .page2 .part2 .card2{
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+
+
+    .page2 .part3{
+       
+        padding: 0px 20px;
+    }
+    .page2 .part4{
+     
+        padding: 0px 20px;
+    }
+    .page2 .part5{
+       
+        padding: 0px 20px;
+    }
+
+    .page2 input{
+   
+        width: 100%;
+        border: 1px solid #111;
+
+    }
+
+    #first_name{
+        padding: 0px;
+      
+    }
+    
+    #last_name{
+       padding: 0px;
+       margin: 0px;
+      
+    }
+
+    #Email{
+        padding: 0px;
+
+    }
+
+    #email{
+        width: 100%;
+  
+
+    }
+
+    .page2 .part1 .card2{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        gap: 10px;
+    
+
+    }
+
+    #phone-number{
+        padding: 0px;
+        
+            
+    }
+
+
+  
+
+    #address{
+        border: 1px solid #111;
+    }
+
+    #country{
+        border: 1px solid #111;
+        padding-right: 65px;
+
+    }
+
+    #state{
+        padding: 0px;
+        border: 1px solid #111;
+        padding-right: 70px;
+    }
+    
+
+
+
+}

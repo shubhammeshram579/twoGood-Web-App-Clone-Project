@@ -1,0 +1,86 @@
+<% include ./partial/header.ejs %>
+    <link rel="stylesheet" href="/stylesheets/menu.css">
+    <div class="menu">
+
+        <!-- contact link page -->
+        <div class="contenercardx">
+            <div class="cardx">
+                <h3>CONNECT WITH US</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>LinkedIn</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+            <div class="cardy">
+
+                <h3>NITTY GRITTIES</h3>
+                <ul>
+                    <li>Good Things FAQs</li>
+                    <li>Good Food FAQs</li>
+                    <li>Good Places</li>
+                    <li>Pathways</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="cardz">
+                <h3>Get started</h3>
+                <ul>
+                    <li>Pathways</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bar">
+            <!-- menu bar -->
+            <div class="card">
+                    <a href="/shop">shop</a>
+                    <a href="/catering">catering<i class="ri-arrow-right-up-line"></i></a>
+                    <a href="/stories">stories</a>
+                    <a href="/about">about</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/donate">Donate</a>
+                    <a href="/OwnOrder">Order</a>
+                    <a class="sigbtn" href="#">Sign in</a>
+            </div>
+
+            <div class="card2">
+                <h4>back to menu</h4>
+                <a class="signout" id="signout" href="/logout">Sign out</a>
+                <h1>Sign in</h1>
+                <form action="/login" method="post">
+                    <input type="text" name="username" id="username" placeholder="   Email address">
+                    <input type="password" name="password" id="password" placeholder="    Password">
+                    <input type="submit" value="Sign in" id="btn">
+                    <h5>NEED AN ACCOUNT? <a id="dignup" href="/register"> Sign up </a> OR <a href="#">FORGOTE PASSWORD?</a></h5>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // dom query Selection
+        let menubar = document.querySelector(".menu .bar .card");
+        let mebtn = document.querySelector(".menu .bar .card .sigbtn");
+        let signin = document.querySelector(".menu .bar .card2");
+        let mebtn2 = document.querySelector(" .menu .bar .card2 h4");
+
+
+        // addEventListener
+        mebtn.addEventListener("click",function(){
+            menubar.style.opacity = 0;
+            signin.style.display = "block";
+
+        });
+
+        mebtn2.addEventListener("click",function(){
+            menubar.style.opacity = 1;
+            signin.style.display = "none"
+
+        })
+    </script>
+
+    <% include ./partial/footer.ejs %>

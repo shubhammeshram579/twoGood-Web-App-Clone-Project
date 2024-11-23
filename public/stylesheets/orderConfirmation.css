@@ -1,0 +1,142 @@
+.backToOrder {
+    position: absolute;
+    z-index: 999;
+    text-decoration: none;
+    color: rgb(114, 26, 26);
+    margin-top: 150px;
+    margin-left: 20px;
+    font-size: 1vw;
+
+}
+
+.card {
+    background-color: cadetblue;
+    margin: 20px 0px;
+    padding: 0px 20px;
+    margin: 0px 13%;
+    position: relative;
+    z-index: 999;
+    min-height: 60vh;
+    margin-top: 200px;
+    border-radius: 10px;
+}
+
+.AdAndOrder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 30px 0px;
+}
+
+.AdAndOrderText {
+    font-size: 1.2vw;
+
+}
+
+.ListOfItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 10px;
+    background-color: ghostwhite;
+    margin: 5px 0px;
+    border-radius: 10px;
+    height: 100px;
+    font-size: 1vw;
+}
+
+.ListOfItem img {
+    height: 5vw;
+    width: 5vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+#imageAndName {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    width: 50%;
+    gap: 20px;
+    /* background-color: rebeccapurple; */
+}
+
+.productName {
+    width: 30%;
+    font-size: 1vw;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.paymentCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+    /* background-color: rebeccapurple; */
+
+}
+
+.paymentCardText {
+    font-size: 1vw;
+
+}
+
+#qty{
+    font-weight: 400; font-size: 2vh;
+
+}
+
+
+@media (max-width:600px) {
+    .backToOrder {
+        font-size: 3vw;
+    }
+
+    .card {
+        margin: 25vh 7%;
+    }
+
+    .AdAndOrderText {
+        font-size: 2.3vw;
+    }
+
+    .ListOfItem {
+        margin-top: 3vh;
+        font-size: 3vw;
+    }
+
+    .ListOfItem img {
+        height: 10vw;
+        width: 10vw;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #imageAndName {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 60%;
+        /* background-color: rebeccapurple; */
+
+    }
+
+    .productName {
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    .paymentCardText {
+        font-size: 3vw;
+    }
+
+    #qty {
+        font-weight: 400;
+        font-size: 2.5vw;
+    }
+
+}

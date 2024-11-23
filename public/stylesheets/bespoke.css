@@ -1,0 +1,303 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 7px;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color:#827f7f;
+    border-radius: 50px;
+}
+
+
+
+.page1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.page1 img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 10px;
+}
+
+.page2 .part1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+
+
+.page2 .part1 input{
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.page2 .pard4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 30px;
+    gap: 20px;
+    /* background-color: rebeccapurple; */
+}
+
+#mobileAndDate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 66px;
+
+}
+
+
+
+
+
+.page2 .pard4 input{
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.page2 .part2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+.page2 .part2 input{
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+.page2 .part3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.page2 .part3 input{
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.page2 .part5{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+.page2 .part5 #checkbox{
+    margin-top: 20px;
+}
+
+
+
+.page2 textarea{
+    height: 100px;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+#number-of-gest{
+    margin-bottom: 20px;
+}
+
+.page2 select{
+    height: 50px;
+    width: 120%;
+    margin-top: 10px;
+}
+
+.page2 p{
+    font-size: 23px;
+    text-transform: capitalize;
+}
+
+#butten{
+    background-color: #111;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-left: 45%;
+    margin-top: 50px;
+
+}
+
+
+/* altet massage donation succefully add*/
+.Alertmassage{
+    text-transform: capitalize;
+    font-size: 1.5vw;
+    color:green;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 999;
+    padding-bottom: 50px;
+     
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+
+    .page1 img{
+        height: 20vh;
+        object-fit: cover;
+    }
+
+    .page2{
+        padding: 0px 50px;
+
+    }
+
+    #firstname{
+        width: 90vw;
+        border: 1px solid #8b8484;
+        /* background-color: rebeccapurple; */
+    }
+
+    #lastname{
+        width: 90vw;
+        border: 1px solid #8b8484;
+        /* background-color: rebeccapurple; */
+    }
+    #company{
+        width: 90vw;
+        border: 1px solid #8b8484;
+        /* background-color: rebeccapurple; */
+    }
+
+    #mobileAndDate{
+        /* background-color:rebeccapurple; */
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        gap: 0px;
+    }
+
+
+    #email{
+        width: 90vw;
+        /* background-color: rebeccapurple; */
+
+    }
+
+    #phonenumber{
+        padding: 0px;
+        width: 35vw;
+        /* background-color: rebeccapurple; */
+    }
+
+    #date{
+        /* padding: 0px; */
+        width: 40vw;
+
+    }
+
+    #address{
+        border: 1px solid #8b8484;
+    }
+
+    .page2 .part1{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+    }
+    .page2 .pard4{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #pastcode{
+        width: 25vw;
+        border: 1px solid #8b8484;
+    }
+    #suburb{
+        width: 25vw;
+        border: 1px solid #8b8484;
+    }
+    #state{
+        width: 25vw;
+        border: 1px solid #8b8484;
+    }
+
+    #butten{
+        width: 100%;
+        margin: 0px;
+    }
+
+    #checkbox{
+        font-size: 3vw;
+        /* background-color: rebeccapurple; */
+    }
+
+
+    .Alertmassage{
+        font-size: 4vw;
+      }
+    
+
+    
+}

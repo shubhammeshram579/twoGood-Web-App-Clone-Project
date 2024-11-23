@@ -1,0 +1,203 @@
+
+body{
+    overflow-x: hidden;
+}
+
+#page1 {
+    background-color: rgb(234, 230, 230);
+    margin: 0px 15%;
+    border-radius: 20px;
+    padding: 10px 10px 100px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 999;
+
+}
+
+
+#page1 h1{
+    /* background-color: green; */
+    font-size: 1vw; font-weight: 500;
+}
+
+#checkPage {
+    text-decoration: none;
+    color: #111;
+}
+
+#productnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    background-color: rgb(220, 219, 219);
+    padding: 0px 300px;
+
+}
+
+#description {
+    margin-left: -60px;
+
+}
+
+#QandA {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 250px;
+
+}
+
+#orderProduct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(187, 165, 208);
+    gap: 20%;
+    margin: 10px;
+
+}
+
+#orderProductCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+    width: 25%;
+    margin-left: -200px;
+}
+
+
+#amount2 {
+    text-align: end;
+    margin-right: 20%;
+    padding-top: 30px;
+
+}
+
+#paymentBtn {
+    float: right;
+    margin-right: 20%;
+    padding: 20px 50px;
+    background-color: orange;
+    margin-top: -90px;
+    position: relative;
+    z-index: 999;
+
+}
+
+#paymentBtn:hover{
+    background-color: rgb(15, 141, 105);
+    color: #fff;
+}
+
+
+strong {
+    text-transform: capitalize;
+}
+
+#cutName{
+    font-weight: 600;
+    font-size: 1vw;
+
+}
+
+@media (max-width:600px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    #svg1{
+        width: 13vw;
+        height: 13vw;
+    }
+    #page1 {
+        background-color: rgb(234, 230, 230);
+        margin: 0px 2%;
+        border-radius: 20px;
+        padding: 10px 10px 100px;
+        margin-top: 30px;
+        position: relative;
+        z-index: 999;
+    }
+
+    #productnav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        background-color: rgb(220, 219, 219);
+        padding: 0px 10px;
+
+    }
+
+    #description {
+        margin-left: -1%;
+    }
+
+    #QandA {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 10px;
+    }
+
+    #orderProduct {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2%;
+        margin: 10px;
+
+    }
+
+    #orderProductCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+        width: 60%;
+        margin-left: -2px;
+    }
+
+
+    #amount2 {
+        text-align: end;
+        margin-right: 5%;
+        padding-top: 30px;
+
+    }
+
+    #paymentBtn {
+        margin-right: 5%;
+
+    }
+
+    #page1 h1{
+        /* background-color: rebeccapurple; */
+        font-weight: 500;
+        /* background-color: red; */
+        font-size: 3vw;
+    }
+
+    strong {
+        text-transform: capitalize;
+        /* background-color: rebeccapurple; */
+        font-weight: 600;
+        font-size: 3vw;
+    }
+
+    #cutName{
+        font-weight: 600;
+        font-size: 3vw;
+
+    }
+
+    #productnav h3{
+        /* background-color: red; */
+        font-size: 3vw;
+    }
+
+}

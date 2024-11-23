@@ -1,0 +1,99 @@
+<% include ./partial/header.ejs %>
+    
+    <link rel="stylesheet" href="/stylesheets/product.css">
+    <!-- single product page -->
+    <div class="product">
+        <div class="pCard1">
+            <div class="card">
+                <h1 name="title">
+                    <%= getProduct.producttitle %>
+                </h1>
+
+
+                <div class="part">
+                    <div
+                        style="display: flex; align-items: center; justify-content: center; width: 3vw;background-color:#E6622B; gap: 10px;">
+                        <!-- Form to update quantity -->
+                        <form id="quantityForm" action="/update-quantity/<%= getProduct._id %>" method="POST"
+                            style="display: flex; gap: 10px; align-items: center; justify-content: center; width: 10px;">
+                            <input type="hidden" id="actionInput" name="action" value="increase">
+                            <button type="button" id="decreaseQuantityBtn"><i id="decreaseQuantityBtn"
+                                    class="ri-subtract-line"></i></button>
+
+                            <h1 id="productQuantity">
+                                <%= getProduct.quantity %>
+                            </h1>
+
+                            <button type="button" id="increaseQuantityBtn"><i id="increaseQuantityBtnLink"
+                                    class="ri-add-line"></i></button>
+                        </form>
+                    </div>
+                    <a href="#">$<%= getProduct.pPrice %></a>
+
+                    <!-- Form to add to cart with the current quantity -->
+                    <form id="addToCartForm" action="/add-to-cart/<%= getProduct._id %>" method="post">
+                        <input type="hidden" id="cartQuantity" name="quantity" value="<%= getProduct.quantity %>">
+                        <button style="background-color: #E6622B; color: #fff; border: none; font-size: 2vh;"
+                            type="submit">Add to Cart</button>
+                    </form>
+
+
+                </div>
+
+            </div>
+            <div class="card2">
+                <img src="<%= getProduct.pImage %>" alt="">
+
+            </div>
+        </div>
+
+
+        <div class="card3">
+            <h6>INFO</h6>
+            <h5>At Two Good Co, we believe that food is more than food…we believe that food is a
+                universal love
+                language, with the power to change the course of someone’s life.
+                Our Change The Course Cookbook features shorter recipes, simpler ingredients and
+                adaptable techniques,
+                designed to help you achieve goodness with less, while our 100% cotton twill apron
+                looks good and works
+                hard for anyone serving up Good Food and Good Times.</h5>
+
+        </div>
+    </div>
+    <div class="produc2">
+        <h5>$<%= getProduct.pPrice %>
+        </h5>
+        <h5>50% OF PROFITS REINVESTED INTO THE TWO GOOD FOUNDATIO</h5>
+    </div>
+
+
+
+    <script>
+        // JavaScript to handle quantity changes
+        document.getElementById('decreaseQuantityBtn').addEventListener('click', function () {
+            let quantityElement = document.getElementById('productQuantity');
+            let quantity = parseInt(quantityElement.innerText);
+            if (quantity > 1) {
+                quantity -= 1;
+                quantityElement.innerText = quantity;
+                document.getElementById('cartQuantity').value = quantity;
+            }
+        });
+
+        document.getElementById('increaseQuantityBtn').addEventListener('click', function () {
+            let quantityElement = document.getElementById('productQuantity');
+            let quantity = parseInt(quantityElement.innerText);
+            quantity += 1;
+            quantityElement.innerText = quantity;
+            document.getElementById('cartQuantity').value = quantity;
+        });
+
+        // Sync the updated quantity to the add-to-cart form
+        document.getElementById('quantityForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            document.getElementById('cartQuantity').value = document.getElementById('productQuantity').innerText;
+            document.getElementById('addToCartForm').submit();
+        });
+    </script>
+    <% include ./partial/footer.ejs %>

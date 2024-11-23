@@ -1,0 +1,122 @@
+<% include ./partial/header.ejs %>
+    <link rel="stylesheet" href="/stylesheets/donate.css">
+
+    <div class="Alertmassage">
+        <!-- In your donate.ejs or corresponding template file -->
+        <% if (successMessage) { %>
+            <div id="flash-message" class="alert alert-success">
+                <%= successMessage %>
+            </div>
+            <% } %>
+
+                <% if (errorMessage) { %>
+                    <div id="flash-message" class="alert alert-danger">
+                        <%= errorMessage %>
+                    </div>
+                    <% } %>
+    </div>
+
+
+    <div class="menu">
+
+        <!-- contact links -->
+        <div class="contenercardx">
+            <div class="cardx">
+                <h3>CONNECT WITH US</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>LinkedIn</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+            <div class="cardy">
+
+                <h3>NITTY GRITTIES</h3>
+                <ul>
+                    <li>Good Things FAQs</li>
+                    <li>Good Food FAQs</li>
+                    <li>Good Places</li>
+                    <li>Pathways</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="cardz">
+                <h3>Get started</h3>
+                <ul>
+                    <li>Pathways</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- donation amount page -->
+        <div class="bar">
+            <button class="btn">back to menu</button>
+            <h5>THANK YOU FOR DONATING TO THE TWO GOOD FOUNDATION. YOU ARE HELPING TO CHANGE THE COURSE
+                OF A WOMAN'S
+                LIFE FOR GOOD.</h4>
+                <div class="card">
+                    <h4>DONATING IN INDIAN RUPEES</h4>
+                    <div class="card1">
+                        <h3><span class="s1">One-Time </span><span class="s2">Weekly </span><span
+                                class="s3">Monthly</span></h3>
+                    </div>
+                    <div class="card2">
+                        <a class="amt" href="#">&#x20B9;264</a>
+                        <a class="amt2" href="#">&#x20B9;528</a>
+                        <a href="#">&#x20B9;1319</a>
+                        <a href="#">&#x20B9;2639</a>
+                    </div>
+                    <div class="part">
+                        <a href="#">&#x20B9;5278</a>
+                        <a href="#">&#x20B9;10,555</a>
+                    </div>
+                    <form action="/donate2" method="post">
+                        <div class="card3">
+                            <textarea name="donate" id="donate" cols="1" rows="1"> &#x20B9;</textarea>
+                        </div>
+                        <input type="submit" value="Submit">
+                    </form>
+                    <h2 class="textmessage">DONATION TOW GOOD FOUNDATION ARE TAX DEDUCTEBLE</h2>
+                </div>
+        </div>
+    </div>
+
+
+    <!-- javascript functionality -->
+    <script>
+
+        // Selection dom query
+        let amt = document.querySelector(".amt");
+        let amt2 = document.querySelector(".amt2");
+        let donate = document.querySelector("#donate");
+
+        amt.addEventListener("click", () => {
+            donate.innerHTML = " &#x20B9;264"
+        });
+
+        amt2.addEventListener("click", () => {
+            donate.innerHTML = " &#x20B9;528"
+        });
+
+
+        // Wait for the DOM to load
+        document.addEventListener('DOMContentLoaded', () => {
+            const flashMessage = document.getElementById('flash-message');
+            if (flashMessage) {
+                // Hide the message after 5 seconds
+                setTimeout(() => {
+                    flashMessage.style.opacity = '0';
+                }, 3000);
+
+                // Remove the message from the DOM after the fade-out
+                setTimeout(() => {
+                    flashMessage.remove();
+                }, 4000); // 1s after opacity change to ensure smooth transition
+            }
+        });
+
+    </script>
+    <% include ./partial/footer.ejs %>

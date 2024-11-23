@@ -1,0 +1,50 @@
+<% include ./partial/header.ejs %>
+    <link rel="stylesheet" href="/stylesheets/orderConfirmation.css">
+
+    <!-- back to the orderlist page link -->
+    <a class="backToOrder" href="/OwnOrder"><i class="fa-solid fa-arrow-left"></i> OrderPage</a>
+
+
+
+    <!-- order page details  -->
+        <div class="card">
+            <h1 style="font-size: 3vh; padding-top: 10px;">Order Details</h1>
+            <div class="AdAndOrder">
+                <p class="AdAndOrderText">Address: <%= getproduct.address %>
+                </p>
+                <p class="AdAndOrderText">OrderId: <%= getproduct.orderId %>
+                </p>
+            </div>
+            <h3>Products list</h3>
+
+            <!-- fatch proudct order info -->
+            <ul>
+                <% getproduct.products.forEach((product, index)=> { %>
+                    <% if (product.productName) { %>
+                        <li class="ListOfItem">
+                            <div id="imageAndName">
+                                <img src="<%= product.pImage %>" alt="">
+
+                                <h5 class="productName">
+                                    <%= product.productName %>
+                                </h5>
+                            </div>
+                            <h5 style="font-weight: 400;"> Price: $<%= product.price %>
+                            </h5>
+                            <h5 id="qty">Qty: <%= product.quantity %>
+                            </h5>
+                        </li>
+                        <% } %>
+                            <% }); %>
+            </ul>
+            <div class="paymentCard">
+                <p class="paymentCardText">Payment Stauts: <%= getproduct.status %>
+                </p>
+                <p class="paymentCardText">Total Invoice <%= getproduct.amount %>.00
+                </p>
+            </div>
+
+
+        </div>
+
+        <% include ./partial/footer.ejs %>

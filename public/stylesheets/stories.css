@@ -1,0 +1,323 @@
+
+/* overflow hidden style over the body */
+body{
+    overflow-x: hidden;
+}
+
+
+
+/* side scroller style */
+body::-webkit-scrollbar{
+    display: block;
+    width: 7px;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color:#827f7f;
+    border-radius: 50px;
+}
+
+
+/* main contaner styling */
+.main{
+    height: 73vh;
+    width: 29.50vw;
+    background-color:azure;
+    border-radius: 2px;
+    overflow: hidden;
+    
+}
+
+
+/* stories page 1 styling */
+.page1{
+    padding-top: 300px; min-height: 90vh; width: 100%; display: flex; align-items: center; justify-content: space-between;
+}
+
+.page1 .card{
+    width: 50%;
+    font-family: 'Futura',sans-serif;
+}
+.page1 .card2{
+    width: 25%;
+}
+.page1 .card2 .stories{
+    font-size: 1.1vw; font-weight: 500; margin-top: 60px;
+    font-family:'Helvetica', sans-serif;
+}
+.page1 .card2 .showall{
+    padding-top: 100px; font-size: 1vw; font-weight: 500;
+}
+.page1 .card2 .span{
+    color: gray;
+}
+.page1 .card2 .span i{
+    margin-left: 212px; font-weight: 500;
+}
+
+
+
+/* page2 styling */
+.page2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px 20px;
+    
+}
+
+/* card image styling like hight more */
+.main .card1 .storyimg{
+    height: 73vh;
+    width: 29.50vw;
+    background-image: url(https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    transition: all ease 1s;
+
+}
+
+
+/* card img text styling */
+.page2 h4{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+
+/* card img text styling */
+.page2 h1{
+    padding: 30px;
+}
+
+
+.main .card1 .storycardtext{
+    height: 34vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; 
+    background-color: #816289e4;
+    color: #fff;
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease 1s;
+    
+}
+
+
+
+
+
+/* large image styling */
+.page2 .largeimg{
+    height: 73vh;
+    width: 58vw;
+    background-color:azure;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+
+
+.page2 .largeimg .card1 .storyimg{
+    height: 73vh;
+    width: 58vw;
+    background-color: #816289e4;
+    background-image: url(https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    transition: all ease 1s;
+   
+
+}
+
+
+
+.page2 .largeimg .card1 .storycardtext{
+    height: 34vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; 
+    background-color: #816289e4;
+    color: #fff;
+    opacity: 0;
+    transition: all ease 1s;
+    overflow: hidden;
+   
+    
+}
+
+
+.page2 .largeimg .card1 .storyimg .storycardtext h4{
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+.page2 .largeimg .card1 .storyimg .storycardtext h1{
+    padding: 50px;
+    /* background-color: green; */
+}
+
+
+
+
+
+/* mobile responsive page styling using media query  */
+@media (max-width:600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    body::-webkit-scrollbar {
+        display: block;
+        width: 7px;
+        background-color: #fff;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: #827f7f;
+        border-radius: 50px;
+    }
+
+    .page1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .page1 .card2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .page1 .card2 .stories {
+        /* background-color: rebeccapurple; */
+        font-size: 5vw;
+        text-align: center;
+
+    }
+
+    .page1 .card2 .showall {
+        font-size: 3vw;
+        margin-bottom: 20px;
+
+
+    }
+
+
+    .page2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        /* background-color: rebeccapurple; */
+    }
+
+
+
+    .page2 h4 {
+        font-size: 3vw;
+        font-weight: 500;
+    }
+
+
+    .page2 h1 {
+        font-size: 4vw;
+
+    }
+
+    /* page2 styling */
+    .main {
+        height: 120vw;
+        width: 100%;
+        background-color: azure;
+        border-radius: 2px;
+        overflow: hidden;
+    }
+
+
+
+    .main .card1 .storyimg {
+        height: 120vw;
+        width: 100%;
+    }
+
+    .main .card1 .storycardtext {
+        height: 120vw;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+    /* large img */
+    .page2 .largeimg{
+        height: 120vw;
+        width: 100%;
+        background-color:azure;
+        border-radius: 2px;
+        overflow: hidden;
+    }
+
+
+    /* large img */
+    .page2 .largeimg .card1 .storyimg {
+        height: 120vw;
+        width: 100%;
+        /* background-color: red; */
+
+    }
+
+
+    .page2 .largeimg .card1 .storycardtext{
+        height: 120vw;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column; 
+        /* background-color: #816289e4; */
+       
+        
+    }
+
+
+    .page2 .largeimg .card1 .storyimg .storycardtext h1 {
+        padding: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+

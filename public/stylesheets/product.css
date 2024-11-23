@@ -1,0 +1,245 @@
+* {
+    color: #E6622B;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* navbar color change */
+.header-nav .nav-part2 a {
+    z-index: 99;
+    color: #E6622B;
+}
+
+
+/* product page styling */
+.product {
+    min-height: 96vh;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-top: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.product .card h1 {
+    width: 30vw;
+    font-size: 3vw;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.pCard1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 70%;
+    }
+
+.product .card h5 {
+    height: 45px;
+    width: 45%;
+    border-radius: 30px;
+    margin-top: 20px;
+    color: aliceblue;
+    background-color: #E6622B;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.product .card .part {
+    width: 20vw;
+    height: 45px;
+    background-color: #E6622B;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    margin-top: 20px;
+
+}
+
+.product .card .part a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.product .card .part span {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+
+
+.product img {
+    height: 52vh;
+    width: 30vw;
+    object-fit: cover;
+}
+
+.product .card3 {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    gap: 50px;
+}
+
+.product .card3 h5 {
+    font-size: 2.6vh;
+    text-align: start;
+    font-weight: 400;
+    color: #E6622B;
+}
+
+.produc2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border-top: 1px solid #E6622B;
+    ;
+    margin: 0px 50px;
+    padding-top: 15px;
+}
+
+
+.product .pCard1 .card .part #quantityForm h1 {
+    color: #fff;
+    font-size: 1vw;
+
+}
+
+#decreaseQuantityBtn {
+    border: none;
+
+}
+
+#decreaseQuantityBtn {
+    background-color: #E6622B;
+    color: #fff;
+    border: 1px solid #E6622B;
+
+
+}
+
+
+#increaseQuantityBtn {
+    border: none;
+
+}
+
+#increaseQuantityBtnLink {
+    background-color: #E6622B;
+    color: #fff;
+    border: 1px solid #E6622B;
+   
+
+}
+
+
+/* mobile responsive styling */
+@media (max-width:600px) {
+
+    .product {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .pCard1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        height: 60vh;
+        width: 100%;
+    }
+
+    .pCard1 img {
+        height: 50vw;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+
+    .product .pCard1 .card h1 {
+        width: 100%;
+        font-size: 7vw;
+    }
+
+    .product .pCard1 .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 200px;
+
+    }
+
+
+    .product .pCard1 .card .part {
+        width: 70%;
+    }
+
+    .product .pCard1 .card .part #quantityForm h1 {
+        font-size: 3vw;
+    }
+
+
+    #decreaseQuantityBtn {
+        border: none;
+
+    }
+
+    #decreaseQuantityBtn {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #E6622B;
+        font-size: 3vw;
+
+    }
+
+
+    #increaseQuantityBtn {
+        border: none;
+
+    }
+
+    #increaseQuantityBtnLink {
+        background-color: E6622B;
+        color: #fff;
+        border: 3px solid #E6622B;
+        font-size: 3vw;
+
+    }
+
+    .card3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card3 h5 {
+        width: 90vw;
+        text-align: justify;
+
+    }
+
+    .produc2{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        padding: 10px 20px;
+    }
+
+}

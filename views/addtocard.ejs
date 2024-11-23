@@ -1,0 +1,188 @@
+<% include ./partial/header.ejs %>
+
+    <!-- addtocard page -->
+    <link rel="stylesheet" href="/stylesheets/addtocard.css">
+    <div class="main">
+        <div class="cards">
+            <% if (cart && cart.products.length> 0) { %>
+                <div class="card"
+                    style="display: flex; align-items: center; justify-content: space-between;border-bottom: 1px solid gray; margin: 0px 20px;padding-bottom: 20px;">
+                    <h1 style="font-size: 2vh; color: gray;">CARD</h1>
+                    <h1 id="Qty">Quentity</h1>
+                    <h1></h1>
+                </div>
+                <% let totalAmount=0; %> <!-- Initialize total amount -->
+                    <% cart.products.forEach(cartItem=> { %>
+                        <div id="card2"
+                            style="display: flex; align-items: center; justify-content:space-between; padding: 50px 20px; border-bottom: 1px solid gray;">
+                            <h1 style="font-size: 20px; font-weight: 500; text-transform: capitalize; width: 30%;">
+                                <%= cartItem.productId.producttitle %>
+                            </h1>
+                            <div class="addcard" style="display: flex; gap: 25px;">
+
+                                <!-- Decrease quantity button -->
+                                <form id="deleteForm" action="/update-quantity/<%= cartItem.productId._id %>" method="POST">
+                                    <input type="hidden" name="action" value="decrease">
+                                    <button id="deleteBtn" type="submit"><i id="minusbtn"
+                                            class="ri-subtract-line"></i></button>
+                                </form>
+                                <h1 class="productQty">
+                                    <%= cartItem.quantity %>
+                                </h1>
+
+                                <!-- Increase quantity button -->
+                                <form id="addFom" action="/update-quantity/<%= cartItem.productId._id %>" method="POST">
+                                    <input type="hidden" name="action" value="increase">
+                                    <button type="submit"><i
+                                            class="ri-add-line"></i></button>
+                                </form>
+
+                            </div>
+                            <div class="amt" style="display: flex; align-items: center; gap: 50px;">
+                                <h1 style="font-size: 20px; font-weight: 100;">$<%= cartItem.productId.pPrice %>
+                                </h1>
+                
+                                <form action="/delete-from-cart/<%= cartItem.productId._id %>" method="POST"
+                                    style="margin: 0;">
+                                    <button style="border: none; background-color: transparent;" type="submit">
+                                        <i id="deleteCardBtn" class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- Delete button -->
+
+
+                        </div>
+                        <% totalAmount +=cartItem.quantity * cartItem.productId.pPrice; %>
+                            <!-- Calculate total amount -->
+                            <!-- Display total amount -->
+                            <% }) %>
+
+
+
+        </div>
+
+        <div class="card3">
+            <h1 style="font-size: 15px; color: gray;">ADD A PERSONALISED CARD FOR THAT SOMEONE SPECIAL FOR JUST $5.</h1>
+            <div class="subtotal">
+                <div class="delevery">
+                    <h1 style="color: gray; font-size: 15px;padding-bottom: 10px;">DELIVERY</h1>
+                    <h1 id="Subtext" style="color: gray; font-size: 15px;">SUBTOTAL</h1>
+                </div>
+                <div class="amt2" style="display: flex; justify-content: end;flex-direction: column; align-items: end;">
+                    <h1 style="font-size: 15px; font-weight: 500;">SHIPPING CALCULATION AT CHECK-OUT.</h1>
+                    <div style="text-align: right; padding: 20px 50px; font-size: 20px; font-weight: 600;">
+                        $<%= totalAmount.toFixed(2) %>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <% } else { %>
+            <!-- if add to card leghth is 0 then showing empty card page  -->
+            <div class="card-details">
+                <h1>Your card is empaty</h1>
+                <h2>See All Good Things</h2>
+                <div id="cardpage">
+                    <div id="scroller">
+                        <div id="scroller-in">
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                        </div>
+                        <div id="scroller-in">
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                        </div>
+                        <div id="scroller-in">
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                            <h4>Card</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="cardpage2">
+                    <div id="scroller2">
+                        <div id="scroller-in2">
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                        </div>
+                        <div id="scroller-in2">
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                        </div>
+                        <div id="scroller-in2">
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                            <h4>empty</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+                <div class="card4">
+                    <a class="ChecBtn" href="/add-to-cart2">CHECKOUT</a>
+                </div>
+                <div class="card5">
+                    <h2 id="buttemText">THANK YOU FOR WALKING
+                        ALONGSIDE VULNERABLE
+                        WOMEN AS THEY FIND THEIR
+                        WAY HOME AGAIN.</h2>
+                </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"
+        integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+        <script src="/javascripts/addToCard.js"></script>
+
+    <% include ./partial/footer.ejs %>

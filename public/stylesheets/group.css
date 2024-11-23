@@ -1,0 +1,204 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 7px;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color:#827f7f;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+.page1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.page1 img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page2{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+
+
+.page2 .card1{
+    height: 350px;
+    width: 450px;
+    background-image: url(https://az727718.vo.msecnd.net/c34bf49efec4419a808454d753e542b5/images/5aec660f8f6c4177a532fe4a4cbe693d_540w.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.page2 .card2{
+    height: 350px;
+    width: 450px;
+    background-image: url(https://az727718.vo.msecnd.net/c34bf49efec4419a808454d753e542b5/images/9fbbbd3f736345a790d8d90185d7e4f7_540w.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.page2 .card3{
+    height: 350px;
+    width: 450px;
+    background-image: url(https://az727718.vo.msecnd.net/c34bf49efec4419a808454d753e542b5/images/653a64cc65f0468d831b32f9a9d70b90_540w.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.page2 .card4{
+    height: 350px;
+   width: 450px;
+  
+    background-image: url(https://az727718.vo.msecnd.net/c34bf49efec4419a808454d753e542b5/images/d74d178bbb6f4fe3b4cfa820d3c55cec_540w.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.page2 .card5{
+    height: 350px;
+    width: 450px;
+    background-image: url(https://az727718.vo.msecnd.net/c34bf49efec4419a808454d753e542b5/images/1e85138919c84a22a39fe992957689d7_540w.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.page2 .card6{
+   height: 350px;
+   width: 450px;
+    background-image: url(https://az727718.vo.msecnd.net/c34bf49efec4419a808454d753e542b5/images/44e6e632a81c4218ad57159cf4d6ebad_540w.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.page2 .card{
+    margin: 20px;
+}
+
+.page2 .card h3{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 155px 0px;
+    background-color: #1111117e;
+    /* background-color: red; */
+    color: #fff;
+    font-size: 2vw;
+    border-radius: 10px;
+
+    
+
+
+}
+
+.page2 .card:hover h3{
+    background-color:#2d2c2c36;
+}
+
+
+.hidden{
+    height: 120%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color:#111111a8;
+    position: absolute;
+    padding-top: 200px;
+    opacity: 1;
+}
+
+.hidden .page{
+    height: 45vh;
+    width: 25vw;
+    background-color: #fff;
+    color: #111;
+    padding: 20px 40px;
+    border-radius: 20px;
+    
+}
+
+.hidden .page input{
+    height: 50px;
+    width: 100%;
+    margin: 15px;
+}
+
+.hidden .page p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+
+/* altet massage donation succefully add*/
+.Alertmassage{
+    text-transform: capitalize;
+    font-size: 1.5vw;
+    color:#fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 999;
+    padding-bottom: 50px;
+     
+  }
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    .hidden{
+        /* background-color: red; */
+        height: 100%;
+    }
+
+    .hidden .page{
+        height: 50vh;
+        width:100%;
+        background-color: #fff;
+        color: #111;
+        padding: 20px 40px;
+        border-radius: 20px;
+        
+    }
+
+    .Alertmassage{
+        font-size: 4vw;
+      }
+
+    
+}

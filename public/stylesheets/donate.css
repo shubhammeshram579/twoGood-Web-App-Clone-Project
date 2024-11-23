@@ -1,0 +1,355 @@
+/* menubar style */
+
+body{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+#svg1{
+    color: #fff;
+    /* margin: 0px 10px; */
+}
+
+.header-nav .nav-part2 a{
+  z-index: 99;
+  color: #fff;
+}
+
+
+.header-nav .nav-part2 .ri-menu-line{
+  display: none;
+}
+
+
+.header-nav .nav-part2 .icon{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    height: 50px;
+    width: 190px;
+    background-color: transparent;
+}
+
+.header-nav .nav-part2 .icon #card{
+    display: none;
+}
+
+
+.header-nav .nav-part2 .icon #home{
+    display: block;
+
+  }
+.menu{
+    height: 100vh;
+    width: 100%;
+    background-color:#111;
+    color: #fff;
+    position: absolute;
+    z-index: 40;
+    opacity: 1;
+    display: flex;
+    align-items:end;
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
+  
+  .menu .contenercardx{
+    display: flex;
+    /* margin-bottom: -10vh; */
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+  .menu li{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  
+  .menu .bar li{
+    font-size: 7vh;
+    font-weight: 1000;
+    text-transform: uppercase;
+    
+  }
+  
+  
+  .menu .cardz{
+    margin-bottom: 10px;
+    margin-left:10vw ;
+  }
+  
+  .menu .cardy{
+    margin-bottom: 64px;
+    margin-left:10vw ;
+  }
+  
+  
+  .menu .cardx li{
+    color:rgb(174, 168, 168);
+    font-size: 20px;    
+  }
+  
+  .menu .cardy li{
+    color:rgb(174, 168, 168);
+    font-size: 20px;    
+  }
+  
+  .menu .cardz li{
+    color:rgb(174, 168, 168);
+    font-size: 20px;    
+  }
+  
+  .menu h3{
+    font-size: 27px;
+    margin-bottom: 16px;
+    font-family: 'Futura', sans-serif;
+  }
+
+
+.menu .bar{
+    height: 83vh;
+    width: 30%;
+}
+
+.bar button{
+    background-color: transparent;
+    border: none;
+    font-size: 1vw;
+    color: #cdc9c9;
+}
+
+.bar h5{
+    width: 100%;
+    font-size: 1.7vw;
+    font-weight: 800;
+    text-align: start;
+    padding-bottom: 100px;
+    color: #cdc9c9;
+    font-family: 'Futura', sans-serif;
+}
+
+.bar .card h4{
+  text-align: center;
+  color: #cdc9c9;
+  font-family: 'Futura', sans-serif;
+}
+
+
+.bar .card .card1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.bar .card .card1 h3{
+  font-size: 1vw;
+  text-align: center;
+  border: 1px solid  #424141;
+  padding: 10px 10px;
+  border-radius: 30px;
+  color: #cdc9c9;
+  margin-bottom: 50px;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+}
+
+
+.bar .card .card1 span{
+  margin: 10px;
+}
+
+.bar .card .card1 .s1:hover{
+  background-color:aliceblue;
+  color: #111;
+  padding: 10px 7px;
+  margin-left: -7px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.bar .card .card1 .s3:hover{
+  background-color:aliceblue;
+  color: #111;
+  padding: 10px 10px;
+  margin-right: -7px;
+  border-radius: 0px 20px 20px 0px;
+}
+.bar .card .card1 .s2:hover{
+  background-color:aliceblue;
+  color: #111;
+  padding: 10px 10px;
+}
+
+.bar .card .card2{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+
+.bar .card .card2 a{
+  text-decoration: none;
+  color:#cdc9c9;
+  font-size: 1.5vw;
+  border: 1px solid rgb(66, 65, 65);
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.bar .card .part a{
+  text-decoration: none;
+  color:#cdc9c9;
+  font-size: 1.5vw;
+  margin-right: 30px;
+  /* margin-left: 30px; */
+  border: 1px solid rgb(66, 65, 65);
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.bar .card .card3 textarea{
+  height: 50px;
+  width: 60%;
+  /* margin-left: 30px; */
+  margin-top: 20px;
+  border: 2px solid  rgb(66, 65, 65);
+  border-radius: 30px;
+  background-color: transparent;
+  color: #cdc9c9;
+  font-size: 2vw;
+  font-weight: 100;
+}
+
+
+.bar .card h2{
+  font-size: 0.5vw;
+  color: #cdc9c9;
+  /* margin-left: 33px; */
+  margin-top: 20px;
+  font-family: 'Futura', sans-serif;
+}
+
+
+.bar input{
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 10px 50px;
+  border-radius: 30px;
+  font-family:'Helvetica', sans-serif;
+}
+
+
+
+/* altet massage donation succefully add*/
+.Alertmassage{
+  font-size: 1vw;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 999;
+  margin-top: 100px;
+   
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+
+  body{
+    overflow: scroll;
+  }
+
+  .menu{
+    min-height: 117vh;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column-reverse;
+  }
+
+  .menu .bar{
+    width: 100%;
+  }
+
+
+
+  .menu .bar .btn{
+    padding-top: 100px;
+    font-size:3vw;
+    padding-bottom: 20px;
+
+  }
+  .menu .bar h5{
+    font-size: 4vw;
+    width: 100%;
+    padding-bottom: 20px;
+
+  }
+  .menu .bar .card h4{
+    font-size: 2.5vw;
+    font-weight: 400;
+    /* background-color: rebeccapurple; */
+    padding-top: 30px;
+
+  }
+  .menu .bar .card .card1 h3{
+    /* background-color: red; */
+    font-size: 5vw;
+    font-weight: 500;
+
+  }
+
+  .menu .bar .card .card2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 1vw;
+    /* background-color: rebeccapurple; */
+  }
+  .menu .bar .card a{
+    /* background-color: red; */
+    font-size: 5vw;
+    font-weight: 500;
+
+  }
+  .menu .bar .textmessage{
+    /* background-color: red; */
+    font-size: 2.5vw;
+    font-weight: 500;
+    /* background-color: rebeccapurple; */
+  }
+
+  .menu .contenercardx h3{
+    font-size: 3.2vw;
+    margin-top: 50px;
+    color: gray;
+    width: 100%;
+  }
+  .menu .contenercardx li{
+    font-size: 3vw;
+  }
+
+  #donate{
+    font-size: 5vw;
+  }
+
+  .Alertmassage{
+    font-size: 4vw;
+  }
+  
+}

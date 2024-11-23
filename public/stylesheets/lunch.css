@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 7px;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color:#827f7f;
+    border-radius: 50px;
+}
+
+
+.page1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.page1 img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    
+}
+
+/* products details */
+.lunch-product{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 10px;
+    /* background-color: red; */
+
+}
+
+
+.lunch-product .card1{
+    height: 100%;
+    width: 20%;
+    padding-left: 200px;
+    border-right: 1px solid gray;
+    position: sticky;
+    top: 130px;
+    /* background-color: red; */
+}
+
+.lunch-product .card1 h1{
+    font-size: 20px; 
+    font-weight: 500; 
+    line-height: 40px;
+    padding-right: 10px;
+    
+    
+}
+
+.lunch-product .card2{
+    /* background-color:blue; */
+    width: 70%;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.lunch-product .card2 .cards{
+    display: flex; 
+    align-items: start;
+    justify-content:space-between; 
+    border: 1px solid rgba(128, 128, 128, 0.182);
+    padding: 10px 0px 40px 10px;
+    border-radius: 5px;
+    /* background-color: red; */
+}
+
+.lunch-product .card2 .cards .card{
+    width: 65%;
+    /* background-color: red; */
+   
+}
+.lunch-product .card2 .cards .card2{
+    width: 35%;
+    /* background-color: blue; */
+}
+
+.lunch-product .card2 .cards h1{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.lunch-product .card2 .cards h3{
+    font-size: 20px; 
+    font-weight: 500;
+    padding-bottom: 30px;
+    width: 60%;
+}
+
+.lunch-product .card2 .cards img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+/* additional styling  */
+#PLink{
+    text-decoration: none; font-weight:800;color: #111;
+}
+
+#H1Link{
+    font-weight: 800;
+}
+
+
+@media (max-width: 600px) {
+
+    html,body{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        /* background-color: green; */
+        overflow-x: hidden;
+    }
+
+
+    
+
+    .lunch-product{
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+        width: 100%;
+        /* background-color:red; */
+
+    }
+
+    .lunch-product .card1{
+        padding: 0px;
+        margin: 0px;
+        background-color:#fff;
+        padding-bottom: 10px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+
+
+    }
+     
+    .lunch-product .card1 .Atag{
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        /* background-color: red; */
+        
+    }
+
+    .lunch-product .card1 .Atag h1{
+        font-size: 4vw;
+   
+    }
+
+    .lunch-product .card1 .nonAtag{
+       margin: 0px;
+       padding: 0px;
+       display: flex;
+       align-items: start;
+       justify-content: center;
+        /* margin-left: -50px; */
+    }
+
+    .lunch-product .card1 .nonAtag h1{
+        font-size: 4vw;
+    }
+
+    .lunch-product .card2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+    }
+
+
+    .lunch-product .card2 .cards{
+        width: 100%;
+        height: auto;
+        /* background-color: red; */
+    }
+
+
+    .lunch-product .card2 .cards .card{
+        width: 60%;
+        /* background-color: green; */
+       
+    }
+
+    .lunch-product .card2 .cards .card h1{
+        font-size: 3vw;
+        /* color:yellow */
+
+    }
+
+    .lunch-product .card2 .cards .card h3{
+        font-size:3vw;
+    }
+
+
+    .lunch-product .card2 .cards .card2{
+        width: 45%;
+    }
+    .lunch-product .card2 .cards .card2 img{
+        height: 35vw;
+        width: 35vw;
+    }
+   
+  
+}
