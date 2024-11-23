@@ -17,9 +17,9 @@ const plm = require("passport-local-mongoose");
 // mongodb cloud server
 // mongoose.connect(process.env.MONGO_URI);
 
-const mongoUri = process.env.MONGO_URI || 'yourMongoDbUriHere';
 
-mongoose.connect(mongoUri, {
+
+mongoose.connect(process.env.MONGO_URI, {
   // useNewUrlParser: true,
   // useUnifiedTopology: true,
   serverSelectionTimeoutMS: 15000, // Timeout after 5 seconds if no server responds
