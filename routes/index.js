@@ -5,7 +5,7 @@ var router = express.Router();
 const connectDB  = require("../db/connectDB.js");
 
 // Connect to MongoDB
-connectDB()
+// connectDB()
 
 // import models
 const userModel = require(".//../models/users");

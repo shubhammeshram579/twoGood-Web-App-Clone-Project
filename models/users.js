@@ -15,7 +15,7 @@ const plm = require("passport-local-mongoose");
 // mongoose.connect(process.env.MONGODB_LOCAL_SERVER);
 
 // mongodb cloud server
-// mongoose.connect(process.env.MONGODB_CLOUD_SERVER);
+mongoose.connect(process.env.MONGODB_CLOUD_SERVER);
 
 
 
