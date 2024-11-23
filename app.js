@@ -9,6 +9,7 @@ var logger = require('morgan');
 const expressSession =  require("express-session");
 const flash = require('express-flash');
 const compression = require('compression');
+const MongoStore = require("connect-mongo")
 
 var indexRouter = require('./routes/index');
 var cateringRouter = require('./routes/catering');
@@ -24,11 +25,28 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // then i used expressSesstion
-app.use(expressSession({
-  resave: false,
-  saveUninitialized: true,
-  secret: "hi helo hi"
-}));
+// app.use(expressSession({
+//   resave: false,
+//   saveUninitialized: true,
+//   secret: "hi helo hi"
+// }));
+
+
+app.use(
+  expressSession({
+    secret: process.env.SESSION_SECRET || "yourSecretKey",
+    resave: false,
+    saveUninitialized: false,
+    store: MongoStore.create({
+      mongoUrl: process.env.MONGODB_CLOUD_SERVER || "mongodb://127.0.0.1:27017/awarderwebsite",
+      collectionName: "sessions", // Optional: Customize the collection name
+    }),
+    cookie: {
+      maxAge: 1000 * 60 * 60 * 24, // 1 day
+      secure: false, // Set to true if using HTTPS
+    },
+  })
+);
 
 
 // Middleware to make flash messages available in templates
