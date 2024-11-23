@@ -10,6 +10,7 @@ const expressSession =  require("express-session");
 const flash = require('express-flash');
 const compression = require('compression');
 const MongoStore = require("connect-mongo")
+const cors = require("cors")
 
 var indexRouter = require('./routes/index');
 var cateringRouter = require('./routes/catering');
@@ -19,6 +20,7 @@ const passport = require('passport');
 var app = express();
 app.use(flash());
 app.use(compression());
+app.use(cors())
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
