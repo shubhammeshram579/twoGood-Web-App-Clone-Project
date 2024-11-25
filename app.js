@@ -28,16 +28,11 @@ app.use(cors())
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-// then i used expressSesstion
-// app.use(expressSession({
-//   resave: false,
-//   saveUninitialized: true,
-//   secret: "hi helo hi"
-// }));
-
 // connectDB 
 connectDB();
 
+
+// MongoStore like reducToolkit for session secret id
 app.use(
   expressSession({
     secret: process.env.SESSION_SECRET || "yourSecretKey",

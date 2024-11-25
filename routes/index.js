@@ -1,21 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
-// // import database
-// const connectDB  = require("../db/connectDB.js");
-
-// // Connect to MongoDB
-// connectDB()
-
 // import models
 const userModel = require(".//../models/users");
 const donateModel = require(".//../models/donate");
 const Cart = require(".//../models/addcard");
-
-// product list
 const Products = require(".//../models/product");
-
-// order product model
 const ProductOrders = require(".//../models/ProductOrders")
 
 // import pass genrater
@@ -423,25 +413,6 @@ router.post('/create/order',isLoggedIn, async (req, res) => {
       res.status(500).send(error);
   }
 });
-
-
-
-
-// // Route for verifying payment
-// router.post('/verify', (req, res) => {
-//   const crypto = require("crypto");
-//   const shasum = crypto.createHmac('sha256', razorpay.key_secret);
-//   shasum.update(req.body.razorpay_order_id + "|" + req.body.razorpay_payment_id);
-//   const digest = shasum.digest('hex');
-
-//   if (digest === req.body.razorpay_signature) {
-//       // Payment successful, do further actions like storing in database
-//       res.json({ status: "success" });
-//   } else {
-//       // Payment failed
-//       res.json({ status: "failed" });
-//   }
-// });
 
 
 // get own order prouct detail router
