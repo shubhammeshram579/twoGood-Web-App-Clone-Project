@@ -36,8 +36,8 @@ const plm = require("passport-local-mongoose");
   try {
     const uri = 'mongodb+srv://shubhammeshram579:22Stc0ui8KxHWBhJ@mongodb-learn.nztavtm.mongodb.net/twogoodApp';
     await mongoose.connect(uri, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+      // useNewUrlParser: true,
+      // useUnifiedTopology: true,
       serverSelectionTimeoutMS: 10000,
       tlsInsecure: false, // Ensure SSL/TLS is enabled
       ssl: true,
