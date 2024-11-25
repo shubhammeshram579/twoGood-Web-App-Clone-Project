@@ -19,17 +19,32 @@ const plm = require("passport-local-mongoose");
 
 
 
-mongoose.connect(process.env.MONGO_URI, {
-  // useNewUrlParser: true,
-  // useUnifiedTopology: true,
-  serverSelectionTimeoutMS: 15000, // Timeout after 5 seconds if no server responds
-  socketTimeoutMS: 45000,        // Close sockets after 45 seconds of inactivity
-  retryWrites: true              // Enable retryable writes
-}).then(() => {
-  console.log('MongoDB connected');
-}).catch((err) => {
-  console.error('MongoDB connection error:', err);
-});
+// mongoose.connect(process.env.MONGO_URI, {
+//   // useNewUrlParser: true,
+//   // useUnifiedTopology: true,
+//   serverSelectionTimeoutMS: 15000, 
+//   socketTimeoutMS: 45000,       
+//   retryWrites: true
+// }).then(() => {
+//   console.log('MongoDB connected');
+// }).catch((err) => {
+//   console.error('MongoDB connection error:', err);
+// });
+
+
+(async () => {
+  try {
+    // const uri = 'mongodb://localhost:27017/productsdb';
+    await mongoose.connect(process.env.MONGO_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      serverSelectionTimeoutMS: 10000,
+    });
+    console.log('Connected to MongoDB');
+  } catch (err) {
+    console.error('Error connecting to MongoDB:', err.message);
+  }
+})();
 
 
 mongoose.connection.on('connected', () => {
