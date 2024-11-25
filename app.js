@@ -12,6 +12,8 @@ const compression = require('compression');
 const MongoStore = require("connect-mongo")
 const cors = require("cors")
 
+const connectDB = require("./db/connectDB.js")
+
 var indexRouter = require('./routes/index');
 var cateringRouter = require('./routes/catering');
 var usersRouter = require('./models/users');
@@ -33,6 +35,8 @@ app.set('view engine', 'ejs');
 //   secret: "hi helo hi"
 // }));
 
+// connectDB 
+connectDB();
 
 app.use(
   expressSession({

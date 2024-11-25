@@ -10,7 +10,7 @@ const connectDB = async () => {
         
 
         // mondb atlas cloud sever
-        await mongoose.connect(process.env.MONGODB_CLOUD_SERVER)
+        await mongoose.connect(process.env.MONGO_URI)
 
         console.log("✅ MongoDB Connected Successfully!");
         

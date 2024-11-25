@@ -32,34 +32,34 @@ const plm = require("passport-local-mongoose");
 // });
 
 
-(async () => {
-  try {
-    const uri = 'mongodb+srv://shubhammeshram579:22Stc0ui8KxHWBhJ@mongodb-learn.nztavtm.mongodb.net/twogoodApp';
-    await mongoose.connect(uri, {
-      // useNewUrlParser: true,
-      // useUnifiedTopology: true,
-      serverSelectionTimeoutMS: 10000,
-      tlsInsecure: false, // Ensure SSL/TLS is enabled
-      ssl: true,
-    });
-    console.log('Connected to MongoDB');
-  } catch (err) {
-    console.error('Error connecting to MongoDB:', err.message);
-  }
-})();
+// (async () => {
+//   try {
+//     const uri = 'mongodb+srv://shubhammeshram579:22Stc0ui8KxHWBhJ@mongodb-learn.nztavtm.mongodb.net/twogoodApp';
+//     await mongoose.connect(uri, {
+//       // useNewUrlParser: true,
+//       // useUnifiedTopology: true,
+//       serverSelectionTimeoutMS: 10000,
+//       tlsInsecure: false, // Ensure SSL/TLS is enabled
+//       ssl: true,
+//     });
+//     console.log('Connected to MongoDB');
+//   } catch (err) {
+//     console.error('Error connecting to MongoDB:', err.message);
+//   }
+// })();
 
 
-mongoose.connection.on('connected', () => {
-  console.log('Mongoose connected to MongoDB');
-});
+// mongoose.connection.on('connected', () => {
+//   console.log('Mongoose connected to MongoDB');
+// });
 
-mongoose.connection.on('error', (err) => {
-  console.error('Mongoose connection error:', err);
-});
+// mongoose.connection.on('error', (err) => {
+//   console.error('Mongoose connection error:', err);
+// });
 
-mongoose.connection.on('disconnected', () => {
-  console.log('Mongoose disconnected from MongoDB');
-});
+// mongoose.connection.on('disconnected', () => {
+//   console.log('Mongoose disconnected from MongoDB');
+// });
 
 
 
