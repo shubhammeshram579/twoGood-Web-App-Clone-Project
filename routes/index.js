@@ -46,10 +46,11 @@ passport.use(new localStrategy(userModel.authenticate()));
 /* GET home page router */
 router.get('/', async function(req, res, next) {
   try {
-    let productList = await Products.find({}).limit(100).exec();
+    let productList = await Products.find({});
+    console.log("productList", productList)
     res.render('index',{productList});
   } catch (error) {
-    console.log(error)
+    console.error('Error fetching products:', error.message);
   }
 });
 
