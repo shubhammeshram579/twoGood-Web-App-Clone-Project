@@ -34,11 +34,13 @@ const plm = require("passport-local-mongoose");
 
 (async () => {
   try {
-    // const uri = 'mongodb://localhost:27017/productsdb';
-    await mongoose.connect(process.env.MONGO_URI, {
+    const uri = 'mongodb+srv://shubhammeshram579:22Stc0ui8KxHWBhJ@mongodb-learn.nztavtm.mongodb.net/twogoodApp';
+    await mongoose.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       serverSelectionTimeoutMS: 10000,
+      tlsInsecure: false, // Ensure SSL/TLS is enabled
+      ssl: true,
     });
     console.log('Connected to MongoDB');
   } catch (err) {
