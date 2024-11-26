@@ -96,6 +96,7 @@ body{
 
 
 
+
 /* product page3 */
 .page3{
     min-height: 100vh;
@@ -357,6 +358,19 @@ h6{
       height: 200px;
       width: 100%;
 
+  }
+
+  #firstPrdoductName{
+    font-size: 2.5vw;
+  }
+
+  h5{
+    font-size: 2.5vw;
+  }
+
+  h6{
+    font-weight: 400;
+    font-size: 2.5vw;
   }
 
 

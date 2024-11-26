@@ -1,6 +1,7 @@
 
 body{
     overflow-x: hidden;
+    font-family:'Helvetica', sans-serif;
 }
 
 #page1 {
@@ -110,8 +111,8 @@ strong {
     }
 
     #svg1{
-        width: 13vw;
-        height: 13vw;
+        width: 15vw;
+        height: 15vw;
     }
     #page1 {
         background-color: rgb(234, 230, 230);

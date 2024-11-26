@@ -39,7 +39,7 @@
 
                             </div>
                             <div class="amt" style="display: flex; align-items: center; gap: 50px;">
-                                <h1 style="font-size: 20px; font-weight: 100;">$<%= cartItem.productId.pPrice %>
+                                <h1 style="font-size: 2.5vh; font-weight: 500;"><span>&#8377;</span><%= cartItem.productId.pPrice %>
                                 </h1>
                 
                                 <form action="/delete-from-cart/<%= cartItem.productId._id %>" method="POST"
@@ -72,7 +72,7 @@
                 <div class="amt2" style="display: flex; justify-content: end;flex-direction: column; align-items: end;">
                     <h1 style="font-size: 15px; font-weight: 500;">SHIPPING CALCULATION AT CHECK-OUT.</h1>
                     <div style="text-align: right; padding: 20px 50px; font-size: 20px; font-weight: 600;">
-                        $<%= totalAmount.toFixed(2) %>
+                        <span>&#8377;</span><%= totalAmount.toFixed(2) %>
                     </div>
                 </div>
             </div>

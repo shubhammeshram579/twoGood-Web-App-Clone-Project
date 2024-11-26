@@ -121,7 +121,7 @@
                         <%= cartItem.quantity %>
                     </h1>
                     <!-- product price -->
-                    <h1 style="font-size: 17px; font-weight: 400;">$<%= cartItem.productId.pPrice %>
+                    <h1 style="font-size: 17px; font-weight: 400;"><span>&#8377;</span><%= cartItem.productId.pPrice %>
                     </h1>
 
                 </div>
@@ -131,7 +131,7 @@
                     <% }) %>
 
 
-                        <h3 id="amount2">Total Amount: $
+                        <h3 id="amount2">Total Amount: <span>&#8377;</span>
                             <%= totalAmount.toFixed(2) %>
                         </h3>
 

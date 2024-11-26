@@ -126,7 +126,7 @@
                                 </span>
                                 <%= cartItem.productId.producttitle %>
                             </h1>
-                            <h1 id="price">$<%= cartItem.productId.pPrice %>
+                            <h1 id="price"><span>&#8377;</span><%= cartItem.productId.pPrice %>
                             </h1>
                         </div>
     
@@ -140,12 +140,12 @@
                                         <h1 id="items">Shipping</h1>
                                         <h1 id="items">Coupon/Gift Certificate</h1>
                                     </div>
-                                    <h1 id="amount">$<%= totalAmount.toFixed(2) %>
+                                    <h1 id="amount"><span>&#8377;</span><%= totalAmount.toFixed(2) %>
                                     </h1>
                                 </div>
                                 <div id="card3item" class="card3">
-                                    <h1>Total (AUD)</h1>
-                                    <h1>$<%= totalAmount.toFixed(2) %>
+                                    <h1>Total</h1>
+                                    <h1><span>&#8377;</span><%= totalAmount.toFixed(2) %>
                                     </h1>
                                 </div>
                                 <div class="card4">
@@ -153,7 +153,7 @@
                                         <h1>Tax Included in Total:</h1>
                                         <h1>GST</h1>
                                     </div>
-                                    <h1 id="gst">$00.00</h1>
+                                    <h1 id="gst"><span>&#8377;</span>00.00</h1>
                                 </div>
                                 <h1 id="paymentbtn2"><a id="paymentbtnLink" href="/payment">CONTINUE Payment</a></h1>
     

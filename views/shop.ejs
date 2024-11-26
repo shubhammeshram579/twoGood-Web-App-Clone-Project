@@ -29,8 +29,8 @@
                         <a href="/product/<%= product._id %>">
                           <img src="<%= product.pImage %>" alt="">
                         </a>
-                        <h5><%= product.producttitle %></h5>
-                        <h6>$<%= product.pPrice %></h6>
+                        <h5 id="firstPrdoductName"><%= product.producttitle %></h5>
+                        <h6>₹<%= product.pPrice %></h6>
                       </div>
                     <% }) %>
                   <% } else { %>
@@ -48,7 +48,7 @@
                       <img src="<%= product.pImage %>" alt="">
                     </a>
                     <h5><%= product.producttitle %></h5>
-                    <h6>$<%= product.pPrice %></h6>
+                    <h6>₹<%= product.pPrice %></h6>
                   </div>
                 <% }) %>
               <% } else { %>
@@ -64,7 +64,7 @@
                       <img src="<%= product.pImage %>" alt="">
                     </a>
                     <h5 class="nameText"><%= product.producttitle %></h5>
-                    <h6>$<%= product.pPrice %></h6>
+                    <h6>₹<%= product.pPrice %></h6>
                   </div>
                 <% }) %>
               <% } else { %>

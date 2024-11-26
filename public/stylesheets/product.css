@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body{
+    font-family:'Helvetica', sans-serif;
+}
+
 
 /* navbar color change */
 .header-nav .nav-part2 a {
@@ -102,7 +106,6 @@
     justify-content: space-between;
     padding: 0px 20px;
     border-top: 1px solid #E6622B;
-    ;
     margin: 0px 50px;
     padding-top: 15px;
 }
@@ -111,6 +114,7 @@
 .product .pCard1 .card .part #quantityForm h1 {
     color: #fff;
     font-size: 1vw;
+    font-weight: 400;
 
 }
 
@@ -140,6 +144,7 @@
    
 
 }
+
 
 
 /* mobile responsive styling */
@@ -240,6 +245,10 @@
         padding: 0px;
         margin: 0px;
         padding: 10px 20px;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 10px;
     }
 
 }

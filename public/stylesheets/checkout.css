@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+    font-family:'Helvetica', sans-serif;
 }
 
 .navbar {
@@ -271,8 +272,8 @@ h1 {
     }
 
     #svg1{
-        height: 13vw;
-        width: 13vw;
+        height: 15vw;
+        width: 15vw;
     }
 
     #contShop{

@@ -28,7 +28,7 @@
                                     class="ri-add-line"></i></button>
                         </form>
                     </div>
-                    <a href="#">$<%= getProduct.pPrice %></a>
+                    <a href="#">₹<%= getProduct.pPrice %></a>
 
                     <!-- Form to add to cart with the current quantity -->
                     <form id="addToCartForm" action="/add-to-cart/<%= getProduct._id %>" method="post">
@@ -62,8 +62,9 @@
         </div>
     </div>
     <div class="produc2">
-        <h5>$<%= getProduct.pPrice %>
+        <h5>₹<%= getProduct.pPrice %>
         </h5>
+        
         <h5>50% OF PROFITS REINVESTED INTO THE TWO GOOD FOUNDATIO</h5>
     </div>
 

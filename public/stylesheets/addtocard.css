@@ -19,6 +19,7 @@ body{
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: #111;
+  font-family:'Helvetica', sans-serif;
 }
 
 
@@ -73,6 +74,13 @@ body::-webkit-scrollbar-thumb{
   padding-top: 30vh;
   background-color:#111;
   color: #fff;
+}
+
+.main #card2{
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .main .card4 a{
     text-decoration: none;
@@ -276,7 +284,8 @@ body::-webkit-scrollbar-thumb{
   
 
   .productQty{
-    font-size: 1vw; font-weight: 400;
+    font-size: 1vw; 
+    font-weight: 400;
   }
 
   #deleteCardBtn{
@@ -385,7 +394,7 @@ body::-webkit-scrollbar-thumb{
 
 /* new updated responsive page 12-10-2024*/
 .productQty{
-  font-size: 4.5vw;
+  font-size: 3vh;
 }
 
 #deleteCardBtn{

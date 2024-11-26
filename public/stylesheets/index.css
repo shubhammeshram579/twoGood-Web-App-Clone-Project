@@ -120,6 +120,12 @@ body{
   font-size: 20px;
 }
 
+.header-nav .nav-part2 #cat:hover{
+  color:gray;
+  font-weight: 600;
+  border-bottom: 3px solid #111;
+}
+
 
 /* mouse circul mover style */
 .curcer{
