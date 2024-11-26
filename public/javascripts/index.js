@@ -4,11 +4,11 @@ function locoMotiveScrolling(){
  const locoScroll = new LocomotiveScroll({
    el: document.querySelector(".main"),
    smooth: true,
-    mobile: {
-       smooth: true
+   mobile: {
+      smooth: true
    },
    tablet: {
-       smooth: true
+      smooth: true
    }
  });
  locoScroll.on("scroll", ScrollTrigger.update);
@@ -140,22 +140,6 @@ function locoMotiveScrolling(){
          // markers:true
        },
      });
- 
-    gsap.to(".page3 .child2", {
-       transition: "all ease-in 0.5s",
-       opacity: 1,
-       // duration:1,
-       // delay:1,
-       scrollTrigger: {
-         trigger: ".page3 .child2",
-         scroller: ".main",
-         start: "top 25%",
-         end: "top 50%",
-         scrub:1,
-       //   markers:true
-       },
-     });
-    
     
     
      gsap.to(".page6 .imagcon svg", {
