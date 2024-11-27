@@ -45,8 +45,9 @@ body{
 }
 .page1 .card2{
     height: 50%;
-    width: 50%;
+    width: 60%;
     font-family:'Helvetica', sans-serif;
+  
 
 }
 
@@ -61,6 +62,11 @@ body{
     text-align: start;
     font-size: 1vw;
     padding-left: 50%;
+    font-family:'Helvetica', sans-serif;
+    padding: 0px;
+    padding-left: 300px;
+    line-height: 4vh;
+    margin: 0px;
 }
 
 
@@ -183,8 +189,8 @@ h6{
 
 /* footer pages */
 
-.page5.endpage h1{
-    font-size: 5vh;
+.page5 .endpage h1{
+    font-size: 2vw;
   }
   
   .page5 i{
@@ -320,6 +326,7 @@ h6{
     text-align: start;
     font-size: 5vw;
     padding-left: 1%;
+    line-height: 4vh;
   }
 
 
@@ -331,7 +338,7 @@ h6{
       align-items: center;
       justify-content:space-around;
       flex-direction: row;
-      opacity: 1;
+      opacity: 0;
       /* background-color: red; */
       padding: 0px;
       
@@ -362,10 +369,12 @@ h6{
 
   #firstPrdoductName{
     font-size: 2.5vw;
+    font-weight: 400;
   }
 
   h5{
     font-size: 2.5vw;
+    font-weight: 400;
   }
 
   h6{
@@ -382,7 +391,7 @@ h6{
       align-items: center;
       justify-content:space-around;
       flex-direction: row;
-      opacity: 1;
+      opacity: 0;
       padding: 0px;
 
     
@@ -424,7 +433,7 @@ h6{
     align-items: center;
     justify-content:space-around;
     flex-direction: row;
-    opacity: 1;
+    opacity: 0;
     padding-bottom: 20px;
 
   
@@ -458,7 +467,7 @@ h6{
   text-transform: capitalize;
 }
 
-.page5 h1{
+.page5 .endpage h1{
   font-size: 3vw;
 }
 
@@ -483,12 +492,16 @@ h6{
     list-style-type: none;
     padding: 2px;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 300;
     margin-left: 0px;
   }
   
   .page6 .card1 li:hover{
     color: #6c6868;
+  }
+
+  .page6 .card2 li{
+    font-weight: 300;
   }
   
   .page6 h3{
@@ -498,14 +511,18 @@ h6{
   .page6 svg{
     height: 10vh;
     width: 100%;
-    opacity: 1;
+    opacity: 0;
   }
 
   
   .page6-part2 h4{
-    font-size: 4vw;
+    font-size: 3.5vw;
+    padding: 40px 30px;
+    margin: 0px;
+    font-weight: 300;
+    text-align: start;
   }
-
+  
     
   }
   

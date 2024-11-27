@@ -8,6 +8,7 @@ body{
 #svg1{
     color: #fff;
     /* margin: 0px 10px; */
+    border:none;
 }
 
 .header-nav .nav-part2 a{
@@ -295,6 +296,13 @@ body{
     /* background-color: rebeccapurple; */
     margin-bottom: 450px;
   }
+  }
+
+
+  @media (max-width:400px){
+    .menu .bar .card a{
+      font-size: 9vw;
+    }
   }
 
 

@@ -7,9 +7,11 @@ function locoMotiveScrolling(){
    mobile: {
       smooth: true
    },
+   smoothMobile:true,
    tablet: {
       smooth: true
-   }
+   },
+   touchMultiplier:3,
  });
  locoScroll.on("scroll", ScrollTrigger.update);
  
@@ -134,7 +136,7 @@ function locoMotiveScrolling(){
        scrollTrigger: {
          trigger: ".page3 .child",
          scroller: ".main",
-         start: "top 20%",
+         start: "top 30%",
          end: "top 50%",
          scrub:1,
          // markers:true

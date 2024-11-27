@@ -6,9 +6,11 @@ function locoMotiveScrolling(){
     mobile: {
        smooth: true
    },
+   smoothMobile:true,
    tablet: {
        smooth: true
-   }
+   },
+   touchMultiplier:3,
  });
  locoScroll.on("scroll", ScrollTrigger.update);
  

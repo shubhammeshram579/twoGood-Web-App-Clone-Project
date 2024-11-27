@@ -370,7 +370,7 @@ body{
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid gray;
   padding-bottom: 100px;
   position: relative;
   z-index: 99;
@@ -543,12 +543,12 @@ body{
 
 /* footer page5 and page6 */
 .page5 .endpage h1{
-  font-size: 5vh;
+  font-size: 3vw;
   font-family: 'Futura', sans-serif;
 }
 
 .page5 i{
-  font-size: 4vh;
+  font-size: 3vw;
   font-weight: 100;
   font-family: 'Futura', sans-serif;
 }
@@ -900,6 +900,7 @@ body{
       align-items: center;
       justify-content: space-between;
       flex-wrap: nowrap;
+      border-bottom: 1px solid gray;
       /* background-color: red; */
   }
 
@@ -934,7 +935,7 @@ body{
       font-size: 3vh;
       margin-bottom: 80px;
       text-align: center;
-      font-weight: 100;
+      font-weight: 300;
   }
 
   .page3 .summary h4{
@@ -943,6 +944,7 @@ body{
       width: 90vw;
       font-size: 20px;
       margin-top: 10vh;
+      font-weight: 600;
       text-decoration: underline;
 
   }
@@ -954,7 +956,7 @@ body{
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      opacity: 1;
+      opacity: 0;
       /* background-color: rebeccapurple; */
 
   }
@@ -983,6 +985,7 @@ body{
 
   #ProductItems h5{
     font-size: 2.5vw;
+    font-weight: 300;
     /* background-color: rebeccapurple; */
   }
 
@@ -1011,6 +1014,7 @@ body{
 
   #ProductItems2 h5{
     font-size: 2.5vw;
+    font-weight: 300;
     /* background-color: rebeccapurple; */
   }
 
@@ -1058,6 +1062,7 @@ body{
       font-size: 4vw; 
       width: 90%;
       text-align:justify ;
+      font-weight: 300;
       
   }
 
@@ -1065,16 +1070,21 @@ body{
       font-size: 3vw; 
       width: 90%;
       padding-bottom: 100px;
+      font-weight: 600;
       
   }
 
   .page4 .story h1{
       padding-top: 50px;
   }
+
+  .page5 .endpage h1{
+    font-size: 3vw;
+  }
   
-  .page5 h1 ,i{
+  .page5 h1 i{
       /* padding-bottom: 10vh; */
-      font-size: 3vh;
+      font-size: 2vw;
   }
 
   .page6{
@@ -1092,7 +1102,7 @@ body{
   .page6 svg{
       margin-top: -300px;
       height: 70px;
-      opacity: 1;
+      opacity: 0;
   }
 
   .page6 .card1{
@@ -1106,8 +1116,9 @@ body{
   }
 
   .page6 .card1 ul li{
-      font-size: 4vw;
+      font-size: 3vw;
       padding-left: 11vw;
+      font-weight: 300;
   }
 
 
@@ -1120,7 +1131,8 @@ body{
   }
 
   .page6 .card2 ul li{
-      font-size: 4vw;
+      font-size: 3vw;
+      font-weight: 300;
   }
 
 
@@ -1141,9 +1153,12 @@ body{
   }
   
   .page6-part2 h4{
-      text-align: start;
+      text-align: center;
       font-size: 4vw;
       font-weight: 100;
+      padding: 40px;
+      margin: 0px;
+      font-weight: 300;
   }
 
   .page6-part2 .GRAYSCALE{ 

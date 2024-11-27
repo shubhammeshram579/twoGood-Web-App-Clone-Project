@@ -484,7 +484,21 @@ body::-webkit-scrollbar-thumb{
     .page6 svg{
         height: 10vh;
         width: 100%;
-        opacity: 1;
+        opacity: 0;
+      }
+
+      .page6-part2 h4{
+        font-size: 3.5vw;
+        padding: 40px 30px;
+        margin: 0px;
+        font-weight: 300;
+        text-align: start;
+      }
+      .page6 .card2 li{
+        font-weight: 300;
+      }
+      .page6 .card1 li{
+        font-weight: 300;
       }
   }
   
