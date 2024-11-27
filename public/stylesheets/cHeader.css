@@ -76,6 +76,19 @@ h4{
     gap: 10px;
 }
 
+.searbar input{
+    border: 1px solid #808080; 
+    padding: 15px 0px; 
+    width: 25vw; 
+    border-radius: 5px 0px 0px 5px;
+}
+
+#searchButton{
+    border: none; 
+    font-size: 1vw; 
+    background-color: transparent;
+}
+
 
 @media (max-width:600px) {
 
@@ -107,5 +120,19 @@ h4{
     #group2{
         margin-right: -7px;
     }
-    
+
+    .searbar input{ 
+        width: 55vw; 
+        border-radius: 5px 0px 0px 5px;
+    }
+    .searbar #searchtitle{
+        display: none;
+    }
+
+    #searchButton{
+        border: none; 
+        font-size: 3vw; 
+        background-color: transparent;
+        font-weight: 600;
+    }
 }

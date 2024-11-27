@@ -366,6 +366,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
     padding-top: 2vh;
     margin-top: -300px;
+    padding-bottom: 100px;
 
 }
 
@@ -387,7 +388,7 @@ body::-webkit-scrollbar-thumb{
     text-transform: uppercase;
     color: #cdc9c9;
     font-weight: 700;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 
 }
 
